@@ -1,0 +1,14 @@
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(7px);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+.nav-link {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
