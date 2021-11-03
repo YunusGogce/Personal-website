@@ -6,32 +6,132 @@
   height: 100vh;
 }
 
+.intro div:nth-child(1) {
+  flex-grow: 5;
+}
+.intro div:nth-child(2) {
+  flex-grow: 2;
+}
+.intro div:nth-child(3) {
+  flex-grow: 4;
+}
+
 .typewriter h1 {
   overflow: hidden;
   border-right: 0.15em solid orange;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 2s steps(12, end), blink-caret 0.75s step-end infinite;
+  text-align: center;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
+.typewriter h1:nth-child(1) {
+  width: 9em;
+  -webkit-animation: type 1.5s steps(12, end);
+  animation: type 1.5s steps(12, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typewriter h1:nth-child(2) {
+  width: 13.5em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(18, end),
+    blink 0.5s step-end infinite alternate;
+  animation: type3 2s steps(18, end), blink 0.5s step-end infinite alternate;
+  -webkit-animation-delay: 1.7s;
+  animation-delay: 1.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
     width: 0;
   }
-  to {
-    width: 100%;
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
   }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
     border-color: transparent;
   }
+}
+@-webkit-keyframes blink {
   50% {
-    border-color: orange;
+    border-color: tranparent;
   }
 }

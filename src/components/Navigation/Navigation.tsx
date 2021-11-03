@@ -8,13 +8,19 @@ function Navigation() {
     <>
       <Navbar variant="dark" className="navbar-fixed">
         <Container>
-          <Navbar.Brand href="/">{"<Portfolio />"}</Navbar.Brand>
+          <AnchorLink href="#intro">
+            <Navbar.Brand>{"<Portfolio />"}</Navbar.Brand>
+          </AnchorLink>
           <Nav className="justify-content-end">
             <AnchorLink href="#projects">
-              <Nav.Link>Projects</Nav.Link>
+              <Nav.Item>Projects</Nav.Item>
             </AnchorLink>
-            <Nav.Link href="#work">Work</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <AnchorLink href="#work">
+              <Nav.Item>Work</Nav.Item>
+            </AnchorLink>
+            <AnchorLink href="#contact">
+              <Nav.Item>Contact</Nav.Item>
+            </AnchorLink>
           </Nav>
         </Container>
       </Navbar>
