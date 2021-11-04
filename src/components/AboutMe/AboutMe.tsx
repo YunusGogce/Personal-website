@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
-// import Portrait from "./portrait.svg";
+import Portrait from "./portrait.svg";
 import { Container, Row, Col } from "react-bootstrap";
 const Fade = require("react-reveal/Fade");
 
@@ -13,7 +13,7 @@ function AboutMe() {
           <Row className="justify-content-center align-self-center">
             <Col md={6} className="mb-4 mb-lg-0">
               <Fade>
-                {/* <img src={Portrait} alt="Portrait photo" className="portrait" /> */}
+                <img src={Portrait} alt="Portrait photo" className="portrait" />
               </Fade>
             </Col>
             <Col md={6} className="text-end my-auto">
