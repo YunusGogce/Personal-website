@@ -1,0 +1,24 @@
+.aboutme {
+  background: linear-gradient(-45deg, rgb(29, 29, 29), rgb(88, 88, 88));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  padding: 8%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.portrait {
+  filter: invert(0%) sepia(2%) saturate(156%) hue-rotate(317deg) brightness(99%)
+    contrast(80%);
+  max-width: 100%;
+}

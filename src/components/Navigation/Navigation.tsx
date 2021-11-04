@@ -12,6 +12,9 @@ function Navigation() {
             <Navbar.Brand>{"<Portfolio />"}</Navbar.Brand>
           </AnchorLink>
           <Nav className="justify-content-end">
+            <AnchorLink href="#aboutme">
+              <Nav.Item>About me</Nav.Item>
+            </AnchorLink>
             <AnchorLink href="#projects">
               <Nav.Item>Projects</Nav.Item>
             </AnchorLink>
