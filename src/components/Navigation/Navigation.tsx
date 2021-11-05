@@ -7,13 +7,15 @@ function Navigation() {
   const [expanded, setExpanded] = useState(false);
 
   function toggleMenu(): void {
-    setExpanded(!expanded);
+    const screenWidth: number = window.innerWidth;
+    if (screenWidth <= 768) {
+      setExpanded(!expanded);
+    }
   }
 
   return (
     <>
       <Navbar
-        collapseOnSelect={true}
         expanded={expanded}
         fixed="top"
         variant="dark"
@@ -21,7 +23,7 @@ function Navigation() {
         className="navbar-bg"
       >
         <Container>
-          <AnchorLink href="#intro" onClick={toggleMenu}>
+          <AnchorLink href="#intro">
             <Navbar.Brand>{"<Portfolio />"}</Navbar.Brand>
           </AnchorLink>
           <Navbar.Toggle

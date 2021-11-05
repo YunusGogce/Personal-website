@@ -1,0 +1,40 @@
+{
+    "work": [
+        {
+            "id": 1,
+            "company": "Cegeka",
+            "description": "Consultant (Software Engineer)",
+            "from": "sep. 2021",
+            "to": "-",
+            "isCurrentJob": true
+        },
+        {
+            "id": 2,
+            "company": "Fenêtre Online Solutions",
+            "description": "Full Stack Developer",
+            "from": "feb. 2021",
+            "to": "jun. 2021"
+        },
+        {
+            "id": 3,
+            "company": "KPN ICT Consulting",
+            "description": "React & SharePoint Developer",
+            "from": "sep. 2019",
+            "to": "jan. 2021"
+        },
+        {
+            "id": 4,
+            "company": "Flanderijn",
+            "description": "Electronic Data Interchange collaborator",
+            "from": "jun. 2018",
+            "to": "nov. 2018"
+        },
+        {
+            "id": 5,
+            "company": "Nex Studio",
+            "description": "Web designer & Developer",
+            "from": "jan. 2016",
+            "to": "jan. 2017"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+.work {
+  background-image: url("../../images/background-work.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: black;
+}
+
+.work-bg {
+  background-color: rgba(214, 214, 214, 0.233);
+  backdrop-filter: blur(40px);
+  padding: 8%;
+}
+
+.react-json-view {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(20px);
+}
+
+.simple-view-btn {
+  font-style: italic;
+  cursor: pointer;
+  color: rgb(184, 184, 184);
+}
+
+.simple-view-btn:hover {
+  text-decoration: underline;
+  color: white;
+}

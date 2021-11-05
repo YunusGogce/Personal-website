@@ -10,7 +10,7 @@ function Projects() {
   return (
     <div className="projects text-light" id="projects">
       <div className="projects-bg">
-        <h2 className="h1 mb-5 hr">{"<Projects />"}</h2>
+        <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<Projects />"}</h2>
         <Fade>
           {projects.map((project, i) => {
             return (
