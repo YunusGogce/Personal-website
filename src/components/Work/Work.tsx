@@ -3,6 +3,7 @@ import IWork from "./IWork";
 import "./Work.css";
 import workData from "./work.json";
 import ReactJson from "react-json-view";
+const Fade = require("react-reveal/Fade");
 
 function Work() {
   const [jobs] = useState<Array<IWork>>(workData.work);
@@ -23,13 +24,15 @@ function Work() {
         </div>
 
         {!simpleView && (
-          <ReactJson
-            src={jobs}
-            theme="twilight"
-            displayDataTypes={false}
-            displayObjectSize={false}
-            enableClipboard={false}
-          />
+          <Fade>
+            <ReactJson
+              src={jobs}
+              theme="twilight"
+              displayDataTypes={false}
+              displayObjectSize={false}
+              enableClipboard={false}
+            />
+          </Fade>
         )}
         {simpleView &&
           jobs.map((job, i) => {

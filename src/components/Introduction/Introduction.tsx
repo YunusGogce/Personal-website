@@ -16,36 +16,52 @@ function Introduction() {
       </div>
       <div className="socials">
         <Fade delay={4000} bottom>
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            size="2x"
-            className="m-2"
-            fixedWidth
-          />
+          <a
+            href="https://www.linkedin.com/in/yunus-gogce/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2x"
+              className="m-2"
+              fixedWidth
+            />
+          </a>
         </Fade>
         <Fade delay={4100} bottom>
-          <FontAwesomeIcon
-            icon={faCameraRetro}
-            size="2x"
-            className="m-2"
-            fixedWidth
-          />
+          <a
+            href="https://unsplash.com/@yunusg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faCameraRetro}
+              size="2x"
+              className="m-2"
+              fixedWidth
+            />
+          </a>
         </Fade>
         <Fade delay={4200} bottom>
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            size="2x"
-            className="m-2"
-            fixedWidth
-          />
+          <AnchorLink href="#contact">
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              size="2x"
+              className="m-2"
+              fixedWidth
+            />
+          </AnchorLink>
         </Fade>
       </div>
       <div>
-        <AnchorLink href="#aboutme">
-          <span className="material-icons text-white display-4 mb-4">
-            keyboard_double_arrow_down
-          </span>
-        </AnchorLink>
+        <Fade delay={5000}>
+          <AnchorLink href="#aboutme">
+            <span className="material-icons text-white display-4 mb-4">
+              keyboard_double_arrow_down
+            </span>
+          </AnchorLink>
+        </Fade>
       </div>
     </div>
   );
