@@ -18,9 +18,11 @@ function Work() {
       <div className="work-bg">
         <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<Work />"}</h2>
         <div className="d-flex justify-content-end">
-          <p onClick={toggleSimpleView} className="simple-view-btn">
-            {simpleView ? "Back to JSON view" : "I don't understand"}
-          </p>
+          <Fade>
+            <p onClick={toggleSimpleView} className="simple-view-btn">
+              {simpleView ? "Back to JSON view" : "I don't understand"}
+            </p>
+          </Fade>
         </div>
 
         {!simpleView && (
