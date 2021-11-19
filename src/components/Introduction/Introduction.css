@@ -23,6 +23,13 @@
   flex-grow: 4;
 }
 
+.maintenance-toast {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  z-index: 1050;
+}
+
 .typewriter h1 {
   overflow: hidden;
   border-right: 0.15em solid orange;

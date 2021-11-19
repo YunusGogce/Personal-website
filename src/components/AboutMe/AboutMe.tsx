@@ -17,23 +17,24 @@ function AboutMe() {
           </Col>
           <Col md={12} lg={6} className="text-lg-end my-auto">
             <Fade right>
-              I'm a 23 year old Software Engineer, living in the Netherlands.
-              {"\n"}
-              My interest in IT started at a very young age, where I discovered
-              that I could build my own website using simple HTML, CSS and
-              JavaScript code. In 2014 I decided to start with the "Application
+              I'm a 23-year-old Software Engineer, living in the Netherlands. My
+              interest in IT started at a very young age, where I discovered
+              that I could build my own website using HTML, CSS and JavaScript
+              code. In 2014 I decided to start with the "Application
               Development" study at the vocational school. I finished this study
-              successfully and decided to start with the Software Engineering
-              bachelor study at The Hague University. This was the perfect study
-              to challenge myself and broaden my knowledge about Software
-              Development. During this study I learned a lot about Frontend
-              development, Backend development, Software Architecture, API,
-              Testing, Databases and so on. Since I already owned an IT related
-              diploma, I decided to work part-time during University. This gave
-              me the opportunity to gain more experience and knowledge in the
-              field. In 2021 I successfully finished the study and got my
-              Bachelor of Science. I have knowledge about the full stack of
-              Software development, but lean more towards Frontend development.
+              successfully. Since I was still young at the time, I felt the need
+              to continue studying to have more advanced knowledge. In 2017 I
+              started with the Software Engineering bachelor study at The Hague
+              University. This was the perfect study to challenge myself and
+              broaden my knowledge about Software Development. During this
+              study, I learned a lot about Frontend development, Backend
+              development, Software Architecture, API, Testing, Databases and so
+              on. Since I already had an IT-related diploma, I decided to work
+              part-time during University. This allowed me to gain more
+              experience and knowledge in the field. In 2021 I successfully
+              finished the study and got my Bachelor of Science. Currently, I
+              have knowledge about the full stack of Software development, but
+              lean more towards Frontend development.
             </Fade>
           </Col>
         </Row>
