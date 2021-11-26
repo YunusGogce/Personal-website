@@ -76,7 +76,7 @@ function Introduction() {
         <div>
           <Fade delay={5000}>
             <AnchorLink href="#aboutme">
-              <span className="material-icons text-white display-4 mb-4">
+              <span className="material-icons text-white display-4 mb-5">
                 keyboard_double_arrow_down
               </span>
             </AnchorLink>

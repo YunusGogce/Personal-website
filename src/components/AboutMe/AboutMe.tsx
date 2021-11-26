@@ -10,7 +10,7 @@ function AboutMe() {
       <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<AboutMe />"}</h2>
       <Container className="d-flex">
         <Row className="justify-content-center align-self-center">
-          <Col md={12} lg={6} className="mb-4 mb-lg-0 my-auto">
+          <Col md={12} lg={6} className="mb-4 my-lg-auto">
             <Fade>
               <img src={Portrait} alt="Portrait" className="portrait" />
             </Fade>

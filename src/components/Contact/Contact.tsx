@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import emailjs from "emailjs-com";
+import ReCAPTCHA from "react-google-recaptcha";
 import { Form, FloatingLabel, Button, Alert, Spinner } from "react-bootstrap";
 
 function Contact() {
@@ -11,31 +12,40 @@ function Contact() {
   const [alertType, setAlertType] = useState<string>("");
   const [showAlert, setShowAlert] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
+  const [captcha, setCaptcha] = useState<string>("");
+
+  const REACT_APP_RECAPTCHA_SITEKEY: string = process.env
+    .REACT_APP_RECAPTCHA_SITEKEY as string;
+  const REACT_APP_TEMPLATE_ID: string = process.env
+    .REACT_APP_TEMPLATE_ID as string;
+  const REACT_APP_SERVICE_ID: string = process.env
+    .REACT_APP_SERVICE_ID as string;
+  const REACT_APP_USER_ID: string = process.env.REACT_APP_USER_ID as string;
 
   async function submit(e: any) {
     e.preventDefault();
     if (name && email && message) {
       setLoading(true);
-      const serviceId = "service_5xtoct2";
-      const templateId = "template_sb5m2xu";
-      const userId = "user_qCLU3pBlixApSf363vf4F";
       const templateParams = {
         name,
         email,
+        "g-recaptcha-response": captcha,
         message,
       };
 
       try {
-        await emailjs.send(serviceId, templateId, templateParams, userId);
+        await emailjs.send(
+          REACT_APP_SERVICE_ID,
+          REACT_APP_TEMPLATE_ID,
+          templateParams,
+          REACT_APP_USER_ID
+        );
         activateAlert("success", "Your message has been sent!");
+        resetForm();
       } catch (e) {
         //@ts-ignore
         activateAlert("danger", "Something went wrong: " + e.text);
       }
-
-      setName("");
-      setEmail("");
-      setMessage("");
     } else {
       activateAlert("danger", "Please fill in all required fields.");
     }
@@ -51,11 +61,20 @@ function Contact() {
     }, 5000);
   }
 
+  function resetForm(): void {
+    setName("");
+    setEmail("");
+    setMessage("");
+    setCaptcha("");
+    //@ts-ignore
+    window.grecaptcha.reset();
+  }
+
   return (
     <>
       <div className="contact" id="contact">
         <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<Contact />"}</h2>
-        <Form onSubmit={submit} className="p-5">
+        <Form onSubmit={submit} className="p-lg-5">
           <Form.Group className="mb-3">
             <FloatingLabel label="Name*" className="mb-3">
               <Form.Control
@@ -78,7 +97,7 @@ function Contact() {
             <FloatingLabel label="Message*">
               <Form.Control
                 as="textarea"
-                style={{ height: "400px" }}
+                style={{ height: "300px" }}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 disabled={loading}
@@ -86,8 +105,18 @@ function Contact() {
               />
             </FloatingLabel>
           </Form.Group>
+          <ReCAPTCHA
+            sitekey={REACT_APP_RECAPTCHA_SITEKEY}
+            theme="dark"
+            onChange={(k: any) => setCaptcha(k)}
+          />
           {showAlert && <Alert variant={alertType}>{alertMsg}</Alert>}
-          <Button variant="secondary" type="submit" disabled={loading}>
+          <Button
+            className="mt-2"
+            variant="secondary"
+            type="submit"
+            disabled={loading}
+          >
             {loading && (
               <Spinner as="span" animation="border" size="sm" role="status" />
             )}

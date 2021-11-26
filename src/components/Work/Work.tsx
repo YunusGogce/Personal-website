@@ -44,7 +44,7 @@ function Work() {
                   <h3>{job.company}</h3>
                   <p className="h5">{job.description}</p>
                   <p>{`${job.from} - ${
-                    job.isCurrentJob ? "huidig" : job.to
+                    job.isCurrentJob ? "present" : job.to
                   }`}</p>
                 </div>
                 {i !== jobs.length - 1 && <hr className="my-5" />}
