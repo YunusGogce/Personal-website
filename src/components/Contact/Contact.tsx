@@ -110,7 +110,11 @@ function Contact() {
             theme="dark"
             onChange={(k: any) => setCaptcha(k)}
           />
-          {showAlert && <Alert variant={alertType}>{alertMsg}</Alert>}
+          {showAlert && (
+            <Alert variant={alertType} className="my-2">
+              {alertMsg}
+            </Alert>
+          )}
           <Button
             className="mt-2"
             variant="secondary"
@@ -120,7 +124,7 @@ function Contact() {
             {loading && (
               <Spinner as="span" animation="border" size="sm" role="status" />
             )}
-            Send
+            {!loading && "Send"}
           </Button>
         </Form>
       </div>

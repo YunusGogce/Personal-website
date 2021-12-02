@@ -3,16 +3,19 @@
         {
             "id": 1,
             "title": "Customer Relationship Management application",
+            "year": 2021,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, est sed ultricies condimentum, nibh nisl faucibus purus, at imperdiet velit turpis et diam. Maecenas iaculis leo quis aliquam blandit. Aliquam vel tortor quis mi porta congue. Sed sit amet imperdiet sapien. Sed sit amet bibendum turpis, a dictum sapien. Mauris vulputate ultricies ex. Proin dignissim urna ipsum, ac mattis ante mollis nec. Nulla suscipit ac diam quis pellentesque. Nullam non eros fermentum, faucibus lectus ut, finibus sapien."
         },
         {
             "id": 2,
             "title": "Reservation system",
+            "year": 2020,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, est sed ultricies condimentum, nibh nisl faucibus purus, at imperdiet velit turpis et diam. Maecenas iaculis leo quis aliquam blandit. Aliquam vel tortor quis mi porta congue. Sed sit amet imperdiet sapien. Sed sit amet bibendum turpis, a dictum sapien. Mauris vulputate ultricies ex. Proin dignissim urna ipsum, ac mattis ante mollis nec. Nulla suscipit ac diam quis pellentesque. Nullam non eros fermentum, faucibus lectus ut, finibus sapien."
         },
         {
             "id": 3,
             "title": "Chatbot",
+            "year": 2019,
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula, est sed ultricies condimentum, nibh nisl faucibus purus, at imperdiet velit turpis et diam. Maecenas iaculis leo quis aliquam blandit. Aliquam vel tortor quis mi porta congue. Sed sit amet imperdiet sapien. Sed sit amet bibendum turpis, a dictum sapien. Mauris vulputate ultricies ex. Proin dignissim urna ipsum, ac mattis ante mollis nec. Nulla suscipit ac diam quis pellentesque. Nullam non eros fermentum, faucibus lectus ut, finibus sapien."
         }
     ]
