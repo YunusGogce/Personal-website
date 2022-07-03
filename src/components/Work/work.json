@@ -1,40 +1,47 @@
 {
-    "work": [
-        {
-            "id": 1,
-            "company": "Cegeka",
-            "description": "Consultant (Software Engineer)",
-            "from": "Sep. 2021",
-            "to": "-",
-            "isCurrentJob": true
-        },
-        {
-            "id": 2,
-            "company": "Fenêtre Online Solutions",
-            "description": "Full Stack Developer",
-            "from": "Feb. 2021",
-            "to": "Jun. 2021"
-        },
-        {
-            "id": 3,
-            "company": "KPN ICT Consulting",
-            "description": "React & SharePoint Developer",
-            "from": "Sep. 2019",
-            "to": "Jan. 2021"
-        },
-        {
-            "id": 4,
-            "company": "Flanderijn",
-            "description": "Electronic Data Interchange collaborator",
-            "from": "Jun. 2018",
-            "to": "Nov. 2018"
-        },
-        {
-            "id": 5,
-            "company": "Nex Studio",
-            "description": "Web designer & Developer",
-            "from": "Jan. 2016",
-            "to": "Jan. 2017"
-        }
-    ]
+  "work": [
+    {
+      "id": 1,
+      "company": "ANWB",
+      "description": "Frontend Developer",
+      "from": "Feb. 2022",
+      "to": "-",
+      "isCurrentJob": true
+    },
+    {
+      "id": 2,
+      "company": "Cegeka",
+      "description": "Consultant (Software Engineer)",
+      "from": "Sep. 2021",
+      "to": "Jan. 2022"
+    },
+    {
+      "id": 3,
+      "company": "Fenêtre Online Solutions",
+      "description": "Full Stack Developer",
+      "from": "Feb. 2021",
+      "to": "Jun. 2021"
+    },
+    {
+      "id": 4,
+      "company": "KPN ICT Consulting",
+      "description": "React & SharePoint Developer",
+      "from": "Sep. 2019",
+      "to": "Jan. 2021"
+    },
+    {
+      "id": 5,
+      "company": "Flanderijn",
+      "description": "Electronic Data Interchange collaborator",
+      "from": "Jun. 2018",
+      "to": "Nov. 2018"
+    },
+    {
+      "id": 6,
+      "company": "Nex Studio",
+      "description": "Web designer & Developer",
+      "from": "Jan. 2016",
+      "to": "Jan. 2017"
+    }
+  ]
 }

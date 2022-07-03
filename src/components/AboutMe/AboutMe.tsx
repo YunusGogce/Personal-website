@@ -2,9 +2,11 @@ import React from "react";
 import "./AboutMe.css";
 import Portrait from "./portrait.svg";
 import { Container, Row, Col } from "react-bootstrap";
+import { getAgeByDate } from "../../utils";
 const Fade = require("react-reveal/Fade");
 
 function AboutMe() {
+  const age: number = getAgeByDate("01-07-1998");
   return (
     <div className="aboutme" id="aboutme">
       <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<AboutMe />"}</h2>
@@ -17,7 +19,7 @@ function AboutMe() {
           </Col>
           <Col md={12} lg={6} className="text-lg-end my-auto">
             <Fade right>
-              I'm a 23-year-old Software Engineer, living in the Netherlands. My
+              {`I'm a ${age}-year-old Software Engineer, living in the Netherlands. My
               interest in IT started at a very young age, where I discovered
               that I could build my own website using HTML, CSS and JavaScript
               code. In 2014 I decided to start with the "Application
@@ -34,7 +36,7 @@ function AboutMe() {
               experience and knowledge in the field. In 2021 I successfully
               finished the study and got my Bachelor of Science. Currently, I
               have knowledge about the full stack of Software development, but
-              lean more towards Frontend development.
+              lean more towards Frontend development.`}
             </Fade>
           </Col>
         </Row>
