@@ -6,7 +6,7 @@ import { getAgeByDate } from "../../utils";
 const Fade = require("react-reveal/Fade");
 
 function AboutMe() {
-  const age: number = getAgeByDate("01-07-1998");
+  const age: number = getAgeByDate(new Date("07/01/1998"));
   return (
     <div className="aboutme" id="aboutme">
       <h2 className="h1 mb-5 hr mt-5 mt-md-0">{"<AboutMe />"}</h2>
